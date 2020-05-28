@@ -72,7 +72,7 @@ interface JvmSignatureUtils {
                     is All -> All
                     is Never, is OnlyOnce -> Never
                 }.let { strategy ->
-                     valueToSignature(it.value, strategy, listBrackets, classExtension)
+                    valueToSignature(it.value, strategy, listBrackets, classExtension)
                 }
                 if (i != a.params.entries.size - 1) text(", ")
             }
